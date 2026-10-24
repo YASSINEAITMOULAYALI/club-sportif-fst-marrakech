@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "firstName": "Yassine",
+    "lastName": "Ait Moulay Ali",
+    "email": "yassine@example.com",
+    "phone": "0600000000",
+    "membershipType": "Etudiant",
+    "active": true
+  },
+  {
+    "id": 2,
+    "firstName": "Salma",
+    "lastName": "Amrani",
+    "email": "salma@example.com",
+    "phone": "0611111111",
+    "membershipType": "Etudiant",
+    "active": true
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Ballon de football",
+    "category": "Football",
+    "price": 180,
+    "stock": 12,
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Ballon de basketball",
+    "category": "Basketball",
+    "price": 220,
+    "stock": 8,
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Filet de volleyball",
+    "category": "Volleyball",
+    "price": 350,
+    "stock": 0,
+    "available": false
+  }
+]
