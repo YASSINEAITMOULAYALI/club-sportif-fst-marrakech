@@ -1,4 +1,3 @@
-// state.js — État central de l'application
 export const state = {
   inscriptions: [],
   message: ""

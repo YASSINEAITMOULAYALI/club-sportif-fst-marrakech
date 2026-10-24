@@ -1,4 +1,3 @@
-// selectors.js — Fonctions qui préparent les données utiles à l'interface
 import { state } from "./state.js";
 
 export function obtenirNombreInscriptions() {

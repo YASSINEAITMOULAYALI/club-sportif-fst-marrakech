@@ -1,4 +1,3 @@
-// view.js — Gestion de l'affichage HTML et du formulaire
 import { enregistrerInscription } from "./dataService.js";
 import { ajouterInscription, setMessage } from "./state.js";
 

@@ -1,4 +1,3 @@
-// dataService.js — Lecture et écriture des inscriptions dans le navigateur
 const CLE_INSCRIPTIONS = "clubSportifFST_inscriptions";
 
 export function obtenirInscriptions() {

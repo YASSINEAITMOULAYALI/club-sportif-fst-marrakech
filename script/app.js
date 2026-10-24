@@ -1,14 +1,11 @@
-// app.js — Point d'entrée : initialise les données et l'interface
 import { obtenirInscriptions } from "./dataService.js";
 import { setInscriptions } from "./state.js";
 import { initialiserFormulaire, afficherAnnee } from "./view.js";
 
 function demarrerApplication() {
-  // Charger les inscriptions déjà sauvegardées dans le navigateur.
+  
   setInscriptions(obtenirInscriptions());
-
-  // Préparer les éléments de l'interface.
-  afficherAnnee();
+ afficherAnnee();
   initialiserFormulaire();
 }
 

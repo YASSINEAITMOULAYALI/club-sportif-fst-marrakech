@@ -23,4 +23,12 @@
     "stock": 0,
     "available": false
   }
+  {
+    "id": 4,
+    "name": "gilets",
+    "category": "Football",
+    "price": 100,
+    "stock": 44,
+    "available": true
+  },
 ]

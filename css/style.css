@@ -1,8 +1,3 @@
-/* =========================
-   CLUB SPORTIF FST MARRAKECH
-   Feuille de style principale
-   ========================= */
-
 :root {
     --club-navy: #071b33;
     --club-blue: #0d2f55;
@@ -110,7 +105,7 @@ section {
     padding: 9px 15px;
 }
 
-/* Hero */
+
 .hero-section {
     min-height: 720px;
     min-height: 100svh;
@@ -122,7 +117,7 @@ section {
     color: #fff;
     background:
         linear-gradient(110deg, rgba(5, 21, 40, 0.94), rgba(7, 27, 51, 0.76), rgba(7, 27, 51, 0.45)),
-        url("images/sport.jpg") center 45% / cover no-repeat,
+        url("../images/sport.jpg") center 45% / cover no-repeat,
         var(--club-blue);
 }
 
@@ -208,7 +203,7 @@ section {
     transform: translateY(3px);
 }
 
-/* Sections */
+
 .section-padding {
     padding: 100px 0;
 }
@@ -318,7 +313,7 @@ section {
     color: #c18b00;
 }
 
-/* Histoire */
+
 .history-section {
     background: var(--club-light);
 }
@@ -362,7 +357,6 @@ section {
     color: var(--club-muted);
 }
 
-/* Valeurs */
 .value-card,
 .activity-card {
     padding: 34px 28px;
@@ -444,7 +438,7 @@ section {
     font-size: 1.04rem;
 }
 
-/* Activités */
+
 .activities-note {
     color: var(--club-muted);
     font-size: 0.9rem;
@@ -455,7 +449,7 @@ section {
     color: var(--club-yellow);
 }
 
-/* Formulaire */
+
 .registration-section {
     background: var(--club-light);
 }
@@ -496,7 +490,7 @@ section {
     font-size: 0.79rem;
 }
 
-/* Contact */
+
 .contact-card {
     height: 100%;
     text-align: center;
@@ -535,7 +529,7 @@ section {
     margin-bottom: 10px;
 }
 
-/* Footer */
+
 .site-footer {
     background: #041326;
     color: #fff;
@@ -629,7 +623,7 @@ section {
     font-size: 0.86rem;
 }
 
-/* Responsive */
+
 @media (max-width: 991.98px) {
     .club-navbar .navbar-collapse {
         padding: 15px 0 8px;
@@ -704,3 +698,73 @@ section {
         animation-duration: 0.01ms !important;
     }
 }
+
+
+/* =====================================================================
+   TP3 — Composants dynamiques de la section « Activités »
+   (ajoutés à la fin, le reste du fichier est inchangé)
+   ===================================================================== */
+.stat-card {
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #e9edf2;
+    border-bottom: 4px solid var(--club-yellow);
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 8px 28px rgba(7, 27, 51, 0.04);
+}
+.stat-card strong { display: block; color: var(--club-navy); font-size: 2rem; font-weight: 850; line-height: 1.2; }
+.stat-card span { color: var(--club-muted); font-size: 0.88rem; }
+
+.filters-bar {
+    margin: 28px 0;
+    padding: 20px;
+    border: 1px solid #e8edf3;
+    border-radius: 14px;
+    background: var(--club-light);
+}
+.filters-bar .form-label { font-size: 0.9rem; }
+
+.activity-card { cursor: pointer; }
+.activity-card.is-selected { border-color: var(--club-yellow); box-shadow: 0 0 0 3px rgba(255, 201, 40, 0.35); }
+.activity-card .activity-meta,
+.activity-card .places-line { font-size: 0.92rem; }
+.activity-card .places-line strong { color: var(--club-navy); }
+
+.sport-tag {
+    color: #bd8a00;
+    font-size: 0.74rem;
+    font-weight: 850;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.badge { font-weight: 700; padding: 0.45em 0.75em; white-space: nowrap; }
+.badge-open { background: #e3f6ea; color: #17693a; }
+.badge-closed { background: #eceff3; color: #556070; }
+
+.detail-panel {
+    position: sticky;
+    top: 96px;
+    padding: 26px;
+    border: 1px solid #e8edf3;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 14px 35px rgba(7, 27, 51, 0.06);
+}
+.detail-title { color: var(--club-navy); font-size: 1.4rem; font-weight: 850; margin: 8px 0 10px; }
+.detail-list { list-style: none; padding: 0; margin: 16px 0; color: var(--club-muted); }
+.detail-list li { padding: 7px 0; border-bottom: 1px solid #eef1f5; }
+.detail-list strong { color: var(--club-navy); }
+.detail-panel .progress { height: 10px; margin-top: 6px; }
+.detail-panel .progress-bar { background: var(--club-yellow); }
+.detail-empty { text-align: center; padding: 24px 8px; color: var(--club-muted); }
+.detail-empty p { margin: 0; }
+
+.no-result {
+    padding: 40px 16px;
+    text-align: center;
+    border: 1px dashed #d5dce5;
+    border-radius: 14px;
+    color: var(--club-muted);
+}
+.no-result p { margin: 0; }

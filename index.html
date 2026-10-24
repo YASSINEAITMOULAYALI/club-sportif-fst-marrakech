@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Icônes Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/02.png" type="png">
 </head>
 
@@ -209,29 +209,48 @@
                     <div class="heading-line"></div>
                 </div>
 
-                <div class="row g-4 mt-3">
-                    <div class="col-md-4">
-                        <article class="activity-card">
-                            
-                            <h3>Football</h3>
-                            <p>Entraînements, rencontres amicales et compétitions pour jouer collectif et se dépasser.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="activity-card">
-                            
-                            <h3>Basket-ball</h3>
-                            <p>Développer la technique, la coordination et l'esprit d'équipe sur le terrain.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="activity-card">
-                            
-                            <h3>Volley-ball</h3>
-                            <p>Partager l'effort, apprendre ensemble et représenter les couleurs de la faculté.</p>
-                        </article>
+                
+                <div id="errorZone" class="alert alert-danger d-none mt-4" role="alert"></div>
+
+               
+                <div id="statsContainer" class="row g-3 mt-3"></div>
+
+                
+                <div class="filters-bar">
+                    <div class="row g-3 align-items-end">
+                        <div class="col-lg-5">
+                            <label for="searchInput" class="form-label">Rechercher</label>
+                            <input type="search" id="searchInput" class="form-control"
+                                   placeholder="Nom, lieu, encadrant, description…" autocomplete="off">
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <label for="categorySelect" class="form-label">Sport</label>
+                            <select id="categorySelect" class="form-select">
+                                <option value="all">Tous les sports</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-lg-2">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="openOnlySwitch">
+                                <label class="form-check-label" for="openOnlySwitch">Inscriptions ouvertes</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="button" id="resetBtn" class="btn btn-outline-secondary w-100">Réinitialiser</button>
+                        </div>
                     </div>
                 </div>
+
+                
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div id="itemsContainer" class="row g-4">
+                            <div class="col-12"><p class="text-muted mb-0">Chargement des activités…</p></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
                 <p class="activities-note text-center mt-4">Les activités et les inscriptions sont communiquées selon le calendrier du club.</p>
             </div>
         </section>
@@ -368,12 +387,12 @@
             <hr class="footer-divider">
             <div class="d-flex flex-column flex-md-row justify-content-between gap-2 footer-bottom">
                 <p class="mb-0">&copy; <span id="currentYear">2026</span> Club Sportif FST Marrakech. Tous droits réservés.</p>
-                <a href="#accueil">Retour en haut ↑</a>
+                <a href="#accueil">Retour en haut</a>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>
