@@ -1,14 +1,18 @@
 export const state = {
+<<<<<<< HEAD
   customers: [],
   products: [],
   orders: [],
   search: "",
   selectedStatus: "Tous",
   selectedCategory: "Toutes",
+=======
+>>>>>>> bd4cf4ed965ef74941ecf430e5d4e1fbc11dccda
   inscriptions: [],
   message: ""
 };
 
+<<<<<<< HEAD
 export function setCustomers(customers) { state.customers = customers; }
 export function setProducts(products) { state.products = products; }
 export function setOrders(orders) { state.orders = orders; }
@@ -18,3 +22,16 @@ export function setSelectedCategory(category) { state.selectedCategory = categor
 export function setInscriptions(inscriptions) { state.inscriptions = inscriptions; }
 export function ajouterInscription(inscription) { state.inscriptions.push(inscription); }
 export function setMessage(message) { state.message = message; }
+=======
+export function setInscriptions(inscriptions) {
+  state.inscriptions = inscriptions;
+}
+
+export function ajouterInscription(inscription) {
+  state.inscriptions.push(inscription);
+}
+
+export function setMessage(message) {
+  state.message = message;
+}
+>>>>>>> bd4cf4ed965ef74941ecf430e5d4e1fbc11dccda

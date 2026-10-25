@@ -1,5 +1,6 @@
 import { state } from "./state.js";
 
+<<<<<<< HEAD
 export function obtenirClientCommande(commande) {
   return state.customers.find(client => client.id === commande.customerId) ?? null;
 }
@@ -83,4 +84,14 @@ export function obtenirDetailCommande(id) {
 
 export function obtenirCategories() {
   return [...new Set(state.products.map(produit => produit.category))].sort();
+=======
+export function obtenirNombreInscriptions() {
+  return state.inscriptions.length;
+}
+
+export function obtenirDerniereInscription() {
+  return state.inscriptions.length
+    ? state.inscriptions[state.inscriptions.length - 1]
+    : null;
+>>>>>>> bd4cf4ed965ef74941ecf430e5d4e1fbc11dccda
 }

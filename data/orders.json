@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 [
   {
@@ -149,3 +150,35 @@
     ]
   }
 ]
+=======
+[
+  {
+    "id": 1001,
+    "customerId": 1,
+    "items": [
+      {
+        "productId": 1,
+        "quantity": 2,
+        "unitPrice": 180
+      }
+    ],
+    "total": 360,
+    "status": "En attente",
+    "orderDate": "2026-10-20"
+  },
+  {
+    "id": 1002,
+    "customerId": 2,
+    "items": [
+      {
+        "productId": 2,
+        "quantity": 1,
+        "unitPrice": 220
+      }
+    ],
+    "total": 220,
+    "status": "Confirmée",
+    "orderDate": "2026-10-21"
+  }
+]
+>>>>>>> bd4cf4ed965ef74941ecf430e5d4e1fbc11dccda
